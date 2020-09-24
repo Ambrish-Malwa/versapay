@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
 	public WebDriver driver;
 	public Properties prop;
-	public WebDriver initialize_driver() {
+	public WebDriver initialize_driver() {			// method to initialize driver
 		prop= new Properties ();
 		try {
 			FileInputStream	fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\versapay\\resources\\config.properties");
